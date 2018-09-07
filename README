@@ -1,0 +1,41 @@
+README FILE FOR HUFFMAN COMPRESSION 
+by Ji Kang 
+CSS 343 Prof. M. Bernstein
+
+To build the encoding portion of the program, please do the following. 
+Open up a terminal in the given folder by right clicking the folder and clicking "open in terminal". 
+Then type and enter the following: 
+./BUILDHUFF
+--> This will create a new file called "HUFF". 
+To encode a text file, please type and enter the following: 
+./HUFF (Textfile name) 
+-->E.g ./HUFF comsn10.txt will encode comsn10.txt. 
+
+To build the decoding portion fo the program, please do the following. 
+In the same terminal, please type and enter the following: 
+./BUILDHUFF
+-->This will create a new file called "PUFF". 
+To decode a .huff file, please type and enter the following: 
+./PUFF (.huff file name) 
+-->E.g ./PUFF comsn10.huff
+
+There is a pre-generated script that'll work just for comsn10.txt called "decode" 
+This will do the previous steps mentioned as well as diff the original and the newly produced. 
+to run this script, please type and enter the following 
+./decode
+
+
+Some litigation-related stuff. 
+Got the common sense text file off of GutenbergProject.org, here is the link to it 
+but I have included a copy of it in the submission. 
+The textfile must be named comsn10.txt so the .huff and .puff files are based off of it. 
+http://www.gutenberg.org/files/147/old/
+The provided decoder, named "puff-baseline" belongs to Morris Bernstein. The decoder has the same functionality as the PUFF program. Used purely for a validation on the HUFF encoding program as well as for the diff command between the original and new copies of text -->cross checking with built program and baseline program. 
+
+SPACE SAVINGS: 
+ 
+According to my program, there were 137349 characters in this given text file of common sense. 
+That's 137349 * 8 = 1098792 bits used without encoding. 
+Also according to my program (See CodedSymbolsTable's dump method for this), with the encoding, the program used 643163 bits. 
+
+(643163 / 1098792) * 100 = 58.533% of the original text's size.

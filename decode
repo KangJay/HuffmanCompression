@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./BUILDHUFF
+./HUFF comsn10.txt
+./BUILDPUFF
+./PUFF comsn10.huff
+
+diff comsn10.txt comsn10.puff

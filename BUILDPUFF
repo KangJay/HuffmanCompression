@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ Puff.cpp BitWriter.cpp BitReader.cpp CodedSymbolTable.cpp HuffmanTree.cpp -Wall -Werror -Wextra -pedantic -std=c++14 -g -o PUFF
+
